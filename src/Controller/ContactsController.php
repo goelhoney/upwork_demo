@@ -92,7 +92,7 @@ class ContactsController extends AppController
         $contacts = $this->loadModel('Contacts');
         $result    = $contacts->getContactsCompany();
         foreach($result as $contact) {
-            // echo json_encode($contact); exit;
+            echo json_encode($contact); exit;
         }
         $this->saveContact();
     }
